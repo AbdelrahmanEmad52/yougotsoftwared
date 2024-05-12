@@ -102,26 +102,31 @@ https://templatemo.com/tm-590-topic-listing
                             
                                 <!DOCTYPE html>
                                 <html>
-                                <head>
-                                    <title>Submit Donation Post</title>
-                                </head>
-                                <body>
-                                    <h2>Create Donation Post for Organizations</h2>
-                                    <form action="submit.php" method="post">
-                                        <label for="category">Category:</label><br>
-                                        <select id="category" name="category">
-                                            <option value="clothes">Clothes</option>
-                                            <option value="toys">Toys</option>
-                                            <option value="food">Food</option>
-                                            <option value="medical supplies">Medical Supplies</option>
-                                            <option value="school supplies">School Supplies</option>
-                                            <option value="blood donations">Blood Donations</option>
-                                        </select><br><br>
-                                        <label for="details">Details:</label><br>
-                                        <textarea id="details" name="details" rows="4" cols="50"></textarea><br><br>
-                                        <input href="" type="submit" value="Submit">
-                                    </form>
-                                </body>
+                                <title>Submit Donation Post</title>
+    <script>
+        function showConfirmation() {
+            alert("Your donation post has been submitted!,"+"Your Post Unique Code is:" + Math.random(1,9).toString(36).substr(2, 3));
+        }
+           
+    </script>
+</head>
+<body>
+    <h1>Create Donation Post for Organizations</h1>
+    <form action="Postsubmit.html" method="post" onsubmit="showConfirmation()">
+        <label for="category">Category:</label><br>
+        <select id="category" name="category">
+            <option value="clothes">Clothes</option>
+            <option value="toys">Toys</option>
+            <option value="food">Food</option>
+            <option value="medical supplies">Medical Supplies</option>
+            <option value="school supplies">School Supplies</option>
+            <option value="blood donations">Blood Donations</option>
+        </select><br><br>
+        <label for="details">Details:</label><br>
+        <textarea id="details" name="details" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
                                 </html>
                                 
 

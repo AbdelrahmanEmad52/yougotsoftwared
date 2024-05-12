@@ -96,19 +96,56 @@ https://templatemo.com/tm-590-topic-listing
                         <div class="login-container">
                             <h2>Login</h2>
                             <form>
-                                <div class="form-floating">
+                                <!DOCTYPE html>
+<html>
+<head>
+    <title>Organization Registration</title>
+</head>
+<body>
+    <h1>Registration for Organizations</h1>
+    <form action="Orgregister.html" method="post">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
 
-                              <label for="floatingInput">Username</label><input type="text" name="name" id="name" class="form-control" placeholder="Username" required="">
-                                    
-                                </div>
-                                <div class="form-floating">
-                                    <label for="password">Password</label>
-                                    </label><input type="text" name="password" id="password" class="form-control" placeholder="Password" required="">
-                                </div>
-                                <button href="List.html" type="submit">Login</button>
-                            </form>
-                        </div>
-                    </div>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="contactNumber">Contact Number:</label><br>
+        <input type="text" id="contactNumber" name="contactNumber" required><br><br>
+
+        <label for="organizationName">Organization Name:</label><br>
+        <input type="text" id="organizationName" name="organizationName" required><br><br>
+
+        <label for="organizationType">Organization Type:</label><br>
+        <input type="text" id="organizationType" name="organizationType" required><br><br>
+
+        <label for="organizationAddress">Organization Address:</label><br>
+        <input type="text" id="organizationAddress" name="organizationAddress" required><br><br>
+
+        <label for="area">Area:</label><br>
+        <input type="text" id="area" name="area" required><br><br>
+
+        <label for="governorate">Governorate:</label><br>
+        <input type="text" id="governorate" name="governorate" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
+
                 </div>
              </section>
 

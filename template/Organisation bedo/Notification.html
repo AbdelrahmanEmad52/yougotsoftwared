@@ -96,12 +96,73 @@ https://templatemo.com/tm-590-topic-listing
                 <div class="container">
 
                     <div class="row">
-    <head>
-        <title>Info update</title>
-    </head>
-    <body>
-        <h1>Your account Information is updated</h1>
+<head>
+    <title>Notification Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #f4f4f4;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Notification Viewer</h1>
+        <ul id="notifications"></ul>
+    </div>
 
+    <script>
+        // Array to store notifications
+        const notifications = [];
+
+        // Function to display notifications
+        function displayNotifications() {
+            const notificationsList = document.getElementById('notifications');
+            notificationsList.innerHTML = ''; // Clear previous notifications
+
+            // Display each notification in the list
+            notifications.forEach(notification => {
+                const listItem = document.createElement('li');
+                listItem.textContent = notification;
+                notificationsList.appendChild(listItem);
+            });
+        }
+
+        // Function to simulate receiving notifications
+        function simulateNotifications() {
+            setInterval(() => {
+                const hasNewNotification = Math.random() < 0.5; // Simulate new notification randomly
+                if (hasNewNotification) {
+                    notifications.push('You have a new donation post to fulfill.');
+                    displayNotifications();
+                }
+            }, 5000); // Simulate new notification every 5 seconds
+        }
+
+        // Start simulating notifications when the page loads
+        simulateNotifications();
+    </script>
+</body>
+</html>
 
 </html>
 </div>
